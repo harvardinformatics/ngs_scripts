@@ -154,7 +154,7 @@ if __name__=="__main__":
                             R1_handles[read_handle].write("%s\n" % "\n".join([head1,seq1,placeholder1,qual1]))
                             R2_handles[read_handle].write("%s\n" % "\n".join([head2,seq2,placeholder2,qual2]))
                         
-                            reads_retained+=retainadd     
+                        reads_retained+=retainadd     
                     else:
                         if (barcode_index_dict[(barcode_found,index_from_read1)],barcode_found,index_from_read1) in barcode_drops:
                             barcode_drops[(barcode_index_dict[(barcode_found,index_from_read1)],barcode_found,index_from_read1)]+=1
